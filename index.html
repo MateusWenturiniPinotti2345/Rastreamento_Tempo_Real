@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rastreamento em Tempo Real da Estação Espacial Internacional (ISS)</title>
+  <!-- Inclui o arquivo CSS do Bootstrap para estilização -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Inclui o arquivo de estilos personalizados (style.css) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Cria um contêiner principal -->
+  <div class="container">
+    <h1 class="mb-4 text-center">Rastreamento em Tempo Real da Estação Espacial Internacional (ISS)</h1>
+    <!-- Cria uma linha dividida em duas colunas usando o Bootstrap -->
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Cria um cartão para exibir as informações da ISS -->
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Informações da ISS</h2>
+            <div id="iss-info">
+              <!-- Exibe as informações da ISS (latitude, longitude, altitude, velocidade) -->
+              <p><strong>Latitude:</strong> <span id="lat"></span></p>
+              <p><strong>Longitude:</strong> <span id="lon"></span></p>
+              <p><strong>Altitude:</strong> <span id="alt"></span> km</p>
+              <p><strong>Velocidade:</strong> <span id="vel"></span> km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Cria um cartão para exibir o mapa 3D da ISS -->
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Mapa 3D</h2>
+            <div id="map3D"></div> <!-- Aqui será exibido o mapa 3D -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inclui a API JavaScript para o mapa 3D -->
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+  <!-- Inclui o arquivo de script personalizado (script.js) -->
+  <script src="script.js"></script>
+</body>
+
+</html>

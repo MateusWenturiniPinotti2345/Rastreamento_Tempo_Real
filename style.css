@@ -1,0 +1,72 @@
+/* Define estilos para o corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  background-image: url('img/02.jpg'); /* Define uma imagem de fundo */
+  background-size: cover; /* Redimensiona a imagem para cobrir todo o elemento pai */
+  background-attachment: fixed; /* Fixa a imagem de fundo para que não role com a página */
+  background-position: center center; /* Posiciona a imagem no centro do elemento */
+  background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Define estilos para um contêiner */
+.container {
+  max-width: 960px; /* Define a largura máxima do contêiner */
+  margin: 30px auto 0; /* Define margens (superior, horizontal e inferior) para posicionar o contêiner */
+  padding: 20px; /* Adiciona preenchimento interno ao contêiner */
+  background-color: rgba(0, 0, 0, 0.7); /* Define uma cor de fundo com transparência */
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Adiciona uma sombra ao contêiner */
+  text-align: center; /* Centraliza o conteúdo do contêiner */
+}
+
+/* Define estilos para um cartão */
+.card {
+  background-color: rgba(255, 255, 255, 0.2); /* Define uma cor de fundo com transparência */
+  border: none; /* Remove as bordas do cartão */
+  border-radius: 15px; /* Adiciona bordas arredondadas ao cartão */
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do cartão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra ao cartão */
+}
+
+/* Define estilos para o título do cartão */
+.card-title {
+  margin: 0; /* Remove as margens do título */
+  font-size: 24px; /* Define o tamanho da fonte do título */
+  color: rgb(255, 255, 255); /* Define a cor do texto do título como branco */
+}
+
+/* Estilos para as informações dentro do cartão */
+#iss-info {
+  color: rgb(252, 253, 255); /* Define a cor do texto das informações */
+}
+
+/* Estilos para um elemento div com ID "earth_div" e um elemento com ID "map3D" */
+#earth_div,
+#map3D {
+  width: 100%; /* Define a largura como 100% do elemento pai */
+  height: 400px; /* Define a altura como 400 pixels */
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites */
+  border: 2px solid #ccc; /* Adiciona uma borda sólida com cor cinza */
+}
+
+/* Define estilos para um elemento com a classe "quote" */
+.quote {
+  font-style: italic; /* Define o estilo da fonte como itálico */
+  font-size: 18px; /* Define o tamanho da fonte */
+  margin-top: 20px; /* Adiciona uma margem superior */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Define estilos para um elemento com a classe "star" */
+.star {
+  position: absolute; /* Define a posição como absoluta */
+  background-color: yellow; /* Define a cor de fundo como amarelo */
+  width: 5px; /* Define a largura do elemento */
+  height: 5px; /* Define a altura do elemento */
+  border-radius: 50%; /* Transforma o elemento em um círculo */
+  box-shadow: 0 0 5px yellow; /* Adiciona uma sombra ao elemento */
+}
